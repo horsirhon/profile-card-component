@@ -1,0 +1,112 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --desaturated-blue: hsl(229, 23%, 23%);
+    --dark-greyish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --font-size: 18px;
+    --font-family: 'Kumbh Sans', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--dark-cyan);
+}
+.bg {
+    position: absolute;
+    width: 120vw;
+    min-width: 500px;
+}
+#bg-top {
+    top: -80vw;
+    left: -60vw;
+}
+#bg-bottom {
+    bottom: -80vw;
+    left: 40vw;
+}
+#component {
+    background-color: white;
+    width: 90vw;
+    max-width: 350px;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+    z-index: 2;
+    font-family: var(--font-family);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.151);
+}
+#bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 3.3rem 0 0;
+}
+#bottom img {
+    border-radius: 50%;
+    border: solid 5px white;
+    position: absolute;
+    top: -3.3rem;
+}
+#bottom hr {
+    width: 90vw;
+    max-width: 350px;
+    margin: 2rem 0 0;
+    border: solid 1px rgba(0, 0, 0, 0.061);
+}
+#details p{
+    font-weight: 600;
+    font-family: inherit;
+    margin-bottom: 0rem;
+    height: 1.5rem;
+    color: var(--desaturated-blue);
+}
+#details p span {
+    font-weight: 500;
+    font-family: inherit;
+    color: var(--dark-gray);
+    display: inline-block;
+    margin-left: .5rem;
+}
+#details > span {
+    font-weight: 300;
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+#stats {
+    display: flex;
+    justify-content: space-between;
+    justify-self: flex-end;
+    align-items: center;
+    width: 85vw;
+    max-width: 320px;
+    padding: 1.5rem 1.5rem;
+}
+.num {
+    font-weight: 600;
+    font-family: inherit;
+    color: var(--desaturated-blue);
+}
+.tag {
+    font-size: 13px;
+    font-family: inherit;
+    color: var(--dark-gray);
+}
